@@ -1,0 +1,223 @@
+/* Global Styles */
+body {
+    font-family: "Roboto", Arial, sans-serif;
+    background: linear-gradient(135deg, #8e9eab, #eef2f3); /* Soft gradient for a modern look */
+    padding: 20px;
+    margin: 0;
+    color: #2c3e50; /* Dark blue-gray for better readability */
+}
+
+/* Container Styles */
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    background: #ffffff; /* White background for clean contrast */
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Softer shadow for subtle depth */
+    border: 2px solid #2ecc71; /* Bright green border for a fresh look */
+}
+
+/* Header Styles */
+h1,
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #2ecc71; /* Bright green for headers */
+    font-family: "Montserrat", sans-serif; /* Modern font for headings */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 700;
+    background: -webkit-linear-gradient(45deg, #3498db, #2ecc71);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+fieldset {
+    margin-bottom: 25px;
+    padding: 25px;
+    border: 2px solid #3498db; /* Blue border for form sections */
+    border-radius: 12px;
+    background-color: #f0f3f4; /* Light gray background for form sections */
+}
+
+legend {
+    font-weight: bold;
+    font-size: 1.3rem;
+    color: #3498db; /* Blue for legend text */
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+    color: #2c3e50; /* Dark text color for labels */
+}
+
+input {
+    margin-top: 10px;
+    padding: 12px;
+    border: 2px solid #95a5a6; /* Neutral gray border */
+    border-radius: 8px;
+    width: calc(100% - 24px);
+    box-sizing: border-box;
+    background-color: #ffffff; /* White background for input */
+    color: #2c3e50; /* Dark blue-gray for input text */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus {
+    border-color: #2ecc71; /* Green focus border */
+    box-shadow: 0 0 8px #2ecc71; /* Green shadow for focus */
+    outline: none;
+}
+
+button {
+    padding: 15px;
+    background-color: #3498db; /* Blue for buttons */
+    color: #ffffff; /* White text for contrast */
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 15px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #2980b9; /* Darker blue on hover */
+    transform: scale(1.05);
+}
+
+/* Resume Styles */
+#resume {
+    margin-top: 30px;
+}
+
+#resume-content {
+    background-color: #ecf0f1; /* Light gray for resume section */
+    padding: 30px;
+    border-radius: 15px;
+    border: 2px solid #3498db; /* Blue border */
+    color: #2c3e50; /* Dark text */
+    box-shadow: 0 0 15px rgba(52, 152, 219, 0.2); /* Subtle blue shadow */
+}
+
+#resume-content h3 {
+    margin-top: 0;
+    color: #3498db; /* Blue headers */
+}
+
+#resume-content p,
+#resume-content ul {
+    margin: 10px 0;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 25px;
+    color: #2c3e50; /* Dark text for list items */
+}
+
+/* Share Section Styles */
+#share-section {
+    margin-top: 40px;
+    text-align: center;
+}
+
+#shareable-link {
+    display: block;
+    margin: 15px 0;
+    color: #3498db; /* Blue for links */
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+#shareable-link:hover {
+    color: #2ecc71; /* Green on hover */
+    text-decoration: underline;
+}
+
+#copy-link-btn,
+#download-btn {
+    display: inline-block;
+    margin: 10px;
+    padding: 12px 25px;
+    background-color: #27ae60; /* Green buttons */
+    color: #ffffff; /* White text */
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    border: 2px solid transparent;
+}
+
+#copy-link-btn:hover,
+#download-btn:hover {
+    background-color: #2ecc71; /* Lighter green on hover */
+    box-shadow: 0 0 10px #2ecc71; /* Green glow on hover */
+    border-color: #2ecc71;
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 768px) {
+    .container {
+        padding: 30px;
+        max-width: 100%;
+    }
+
+    h1,
+    h2 {
+        font-size: 1.8rem;
+        margin-bottom: 20px;
+        letter-spacing: 2px;
+    }
+
+    form,
+    fieldset {
+        padding: 20px;
+    }
+
+    legend {
+        font-size: 1.2rem;
+    }
+
+    input,
+    button {
+        font-size: 1rem;
+        padding: 10px;
+    }
+
+    button {
+        margin-top: 10px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    h1,
+    h2 {
+        font-size: 1.5rem;
+        letter-spacing: 1px;
+    }
+
+    input,
+    button {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+
+    .container {
+        padding: 20px;
+    }
+}
+
+
+
